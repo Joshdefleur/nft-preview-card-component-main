@@ -15,26 +15,130 @@ body{
 
 .page{
     background-color: hsl(216, 50%, 16%);
-    border-radius: 10px;
+    border-radius: 20px;
     margin: auto;
     padding: 1.5em;
     font-family: "Outfit", sans-serif;
+    max-width: 330px;
+    box-shadow: 1px 5px 31px -10px;
 }
 
 h2{
     color: white;
-    margin-bottom: 0.8em;
+    margin-bottom: 0.5em;
 }
 
 p{
-    font-size: 18px;
+    font-size: 17.5px;
+    margin-bottom: 0.67em;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+hr{
+    border-color: hsl(215, 32%, 27%);
+    margin-bottom: 18px;
 }
 
 /* img */
+
+.pic{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .image{
     height: 100%;
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 1.2em;
+}
+
+.eyes{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,255,247,0.5);
+    visibility: hidden;
+}
+
+.eye{
+    display: none;
+    opacity: 1;
+}
+
+.pic:hover .eye{
+    display: block;
+    opacity: 1;
+}
+
+.pic:hover .eyes{
+    visibility: visible;
+}
+
+/* info */
+
+.info{
+    margin-top: 1.7em;
+}
+
+.etherium{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.etherium p{
+    margin-bottom: 0;
+}
+
+.eth{
+    margin-right: auto;
+    margin-left: 0.5em;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.eth2{
+    font-weight: 400;
+    margin-left: 0.5em;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+}
+
+.per{
+    height: 40px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+    border-block-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+}
+
+.author p{
+    margin-bottom: 0;
+    margin-left: 1em;
+    font-weight: 400;
+}
+
+.eq:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+span{
+    color: white;
+}
+
+span:hover{
+    color: hsl(178, 100%, 50%);
 }
